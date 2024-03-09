@@ -1,0 +1,13 @@
+#Función para convertir grados centigrados a grados fahrenheit y kelvin
+
+def celsius_to_fahrenheit_and_kelvin(celsius):
+    fahrenheit = celsius * 9/5 + 32
+    kelvin = celsius + 273.15
+    return fahrenheit, kelvin
+
+# Solicitar al usuario que ingrese los grados Celsius
+celsius = float(input("Ingresa los grados Celsius: "))
+
+# Convertir los grados Celsius y mostrar los resultados
+fahrenheit, kelvin = celsius_to_fahrenheit_and_kelvin(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit:.2f} grados Fahrenheit y {kelvin:.2f} Kelvin.")
