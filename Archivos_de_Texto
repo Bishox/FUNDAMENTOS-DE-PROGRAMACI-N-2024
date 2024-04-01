@@ -1,0 +1,15 @@
+# Creación del archivo de texto
+with open("my_notes.txt", "w") as file:
+    # Escribir notas personales en el archivo
+    file.write("Nota 1: buenas tardes.\n")
+    file.write("Nota 2: buenos dias.\n")
+    file.write("Nota 3: buenas noches.\n")
+
+# Lectura del archivo de texto
+with open("my_notes.txt", "r") as file:
+    # Leer el contenido del archivo línea por línea
+    lines = file.readlines()
+    # Mostrar cada línea leída en la consola
+    for line in lines:
+        print(line.strip()) 
+#Cierre del archivo
